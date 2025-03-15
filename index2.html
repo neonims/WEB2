@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/main2.css" />
+  </head>
+  <body>
+    <!--#region wrapper-->
+    <div class="wrapper">
+      <!--#region menu-->
+      <div class="menu">
+        <nav class="nav">
+          <div class="nav-item"><a href="#" class="nav-item-link">home</a></div>
+          <div class="nav-item">
+            <a href="#" class="nav-item-link">about</a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="nav-item-link">contact</a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="nav-item-link">gallery</a>
+          </div>
+          <div class="images"><img src="./src/images/th.jpg  " alt="" /></div>
+        </nav>
+      </div>
+      <div class="mobile_menu">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <!--#end region-->
+    </div>
+    <!--#end region-->
+    <script>
+      let menu_mobile = document.querySelector(".mobile_menu");
+      let menu = document.querySelector(".menu");
+      console.log(menu_mobile);
+      menu_mobile.addEventListener("click", function () {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
